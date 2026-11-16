@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Add the Sitemap directive after confirming the production URL.
