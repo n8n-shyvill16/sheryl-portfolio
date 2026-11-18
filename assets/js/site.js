@@ -80,18 +80,6 @@ document.querySelectorAll(".video-frame video").forEach((video) => {
   video.addEventListener("play", () => video.closest(".video-frame")?.classList.add("is-playing"), { once: true });
 });
 
-const contactForm = document.querySelector("[data-demo-form]");
-if (contactForm) {
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const status = contactForm.querySelector(".form-status");
-    if (status) {
-      status.textContent = "This demo form is not connected to a backend. Please email or message Sheryl using the verified links on this page.";
-      status.setAttribute("role", "status");
-    }
-  });
-}
-
 function renderGallery(target, items, label, caption) {
   if (!target || !Array.isArray(items)) return;
   target.replaceChildren();
