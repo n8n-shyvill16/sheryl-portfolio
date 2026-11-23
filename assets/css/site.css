@@ -776,6 +776,7 @@ button { color: inherit; }
 .contact-grid {
   display: grid;
   align-items: start;
+  row-gap: 24px;
   max-width: 760px;
   margin-inline: auto;
   grid-template-columns: 1fr;
